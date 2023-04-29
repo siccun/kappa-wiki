@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kappa.wiki</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <main>
+
+    <div class="app" id="app">
+      <header>
+        <h1>kappa.wiki</h1>Everything you need to track your progress towards <a href="https://escapefromtarkov.fandom.com/wiki/Secure_container_Kappa" target="_blank">Kappa</a>.
+      </header>
+      <section id="quests-section">
+        <div id="quest-filters">
+          <h2>
+            Show quests from:
+            <a href="#" class="filter-btn chosen">All</a> |
+            <a href="#" class="filter-btn">Prapor</a> |
+            <a href="#" class="filter-btn">Therapist</a> |
+            <a href="#" class="filter-btn">Skier</a> |
+            <a href="#" class="filter-btn">Peacekeeper</a> |
+            <a href="#" class="filter-btn">Mechanic</a> |
+            <a href="#" class="filter-btn">Ragman</a> |
+            <a href="#" class="filter-btn">Jaeger</a>
+          </h2>
+        </div>
+        <div class="header">
+          <h1>Quests<span id="quest-counter">: <span id="done-count">?</span> / <span id="quest-count">?</span> completed.</span></h1>
+          <h1><a href="#collector-section">The Collector</a> | <a href="#done-section">Completed Quests</a></h1>
+        </div>
+        <div class="quest-list" id="quest-list">
+
+          <!-- 
+          <div class="item">
+            <p>Trader name</p>
+            <p class="text">Quest name</p>
+            <input type="checkbox" />
+          </div>
+          -->
+
+        </div>
+      </section>
+      <section id="done-section">
+        <div class="header">
+          <h1>Completed Quests</h1>
+          <h1>go to <a href="#">top</a></h1>
+        </div>
+        <div class="done-list" id="done-list">
+          <!-- completed quests go here -->
+        </div>
+      </section>
+      <section id="collector-section">
+        <div class="header">
+          <h1>The Collector<span id="collector-counter">: <span id="collected-count">?</span> / <span id="collector-count">?</span> items found.</span></h1>
+          <h1>go to <a href="#">top</a></h1>
+        </div>
+        <div class="collector-list" id="collector-list">
+
+          <!-- 
+          <div class="item">
+            <p>Item name</p>
+            <input type="checkbox" />
+          </div>
+          -->
+
+        </div>
+      </section>
+      <footer>
+        <p>Shout outs to the official EFT wiki team &#9829
+          <br />
+          <br />  
+          Page seem completely broken? <a href="#" id="reset">Reset Data</a>
+          <br />
+          <br />
+          Found a bug / wrong info? <a href="https://www.reddit.com/user/siccun/" target="_blank">Let me know</a>
+          <br />
+          <br />
+          &copy; 2023 kappa.wiki
+        </p>
+      </footer>
+    </div>
+
+  </main>
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
